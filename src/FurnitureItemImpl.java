@@ -2,12 +2,12 @@ public class FurnitureItemImpl {
     public static void main(String[] args) {
         FurnitureItem furnitureItem = new FurnitureItem();
 
-        furnitureItem.furnitureCode = 1;
-        furnitureItem.furnitureType = "chairs";
+        furnitureItem.furnitureCode = 0;
+        furnitureItem.furnitureType = "stools";
         furnitureItem.furnitureUsage = "outdoor";
-        furnitureItem.color = "blue";
+        furnitureItem.color = "red";
         furnitureItem.gradeOfFurniture = "grade 1";
-        furnitureItem.price = 2000;
+        furnitureItem.price = 800;
 
         System.out.println("furniture code = " + furnitureItem.furnitureCode);
         System.out.println("furniture type = " + furnitureItem.furnitureType);
@@ -17,6 +17,7 @@ public class FurnitureItemImpl {
         System.out.println("price = " + furnitureItem.price);
 
         System.out.println("Discounted Price:" + furnitureItem.getFinalPriceAfterDiscount());
+        //commment
 
     }
 }
