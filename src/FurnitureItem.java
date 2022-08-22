@@ -12,14 +12,11 @@ public class FurnitureItem {
         gradeOfFurniture = "Grade 1";
         color = "red";
         furnitureUsage = "indoor";
-        price = 0.0;
+        price = 100.0;
     }
 
     public double getFinalPriceAfterDiscount() {
-        if (furnitureUsage.equalsIgnoreCase("outdoor")) {
-            return price - (price * 5 / 100);
-        }
-        return price;
+        return price - (price * 5 / 100);
     }
 
 }
