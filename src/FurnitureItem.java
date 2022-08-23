@@ -16,9 +16,11 @@ public class FurnitureItem {
     }
 
     public double getFinalPriceAfterDiscount() {
-        return price - (price * 5 / 100);
+        if (furnitureUsage.equalsIgnoreCase("outdoor")) {
+            return price - (price * 5 / 100);
+        }
+        return price;
     }
-
 }
 
 
